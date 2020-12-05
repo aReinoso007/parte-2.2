@@ -37,10 +37,16 @@ int main(int argc, char *argv[]){
 
 	 imshow("Torso", img1);
 	 imshow("Erosion Torso", Erosion);
+     imwrite("resultados/torso/Erosion-torso.png", Erosion);
 	 imshow("Dilatacion Torso", Dilatacion);
+     imwrite("resultados/torso/Dilatacion-torso.png", Dilatacion);
 	 imshow("Tophat Torso", TopHat);
+     imwrite("resultados/torso/Tophat-torso.png", TopHat);
 	 imshow("Blackhat Torso", BlackHat);
+     imwrite("resultados/torso/Black-torso.png", BlackHat);
 	 imshow("Imagen_Top_Black", Imagen_Top_Black);
+     imwrite("resultados/torso/Imagen_Top_Black-torso.png", Imagen_Top_Black);
+     
 	 
 
 	 // Operaciones morfologicas para la Imagen Angiografia
@@ -52,11 +58,22 @@ int main(int argc, char *argv[]){
 
 	 imshow("Angiografia", img2);
 	 imshow("Erosion Angiografia", ErosionAngiografia);
+     imwrite("resultados/angiografia/ErosionAngiografia.png", ErosionAngiografia);
+
+     imwrite("resultados/Imagen_Top_Black-torso.png", Imagen_Top_Black);
+     imwrite("resultados/angiografia/Imagen_Top_Black.png", Imagen_Top_Black);
+
 	 imshow("Dilatacion Angiografia", DilatacionAngiografia);
+     imwrite("resultados/angiografia/DilatacionAngiografia.png", DilatacionAngiografia);
+
 	 imshow("Tophat Angiografia", TopHatAngiografia);
+     imwrite("resultados/angiografia/TopHatAngiografia.png", TopHatAngiografia);
+
 	 imshow("Blackhat Angiografia", BlackHatAngiografia);
+     imwrite("resultados/angiografia/BlackHatAngiografia.png", BlackHatAngiografia);
+
 	 imshow("Imagen_Top_Black", Imagen_Top_BlackAngiografia);
-	 
+	 imwrite("resultados/angiografia/Imagen_Top_BlackAngiografia.png", Imagen_Top_BlackAngiografia);
 	 
 
 	 // Operaciones morfologicas para la Imagen Xray
@@ -68,10 +85,15 @@ int main(int argc, char *argv[]){
 
 	 imshow("Xray", img3);
 	 imshow("Erosion Xray", ErosionXray);
+     imwrite("resultados/xray/ErosionXray.png", ErosionXray);
 	 imshow("Dilatacion Xray", DilatacionXray);
+     imwrite("resultados/xray/DilatacionXray.png", DilatacionXray);
 	 imshow("Tophat Xray", TopHatXray);
+     imwrite("resultados/xray/TopHatXray.png", TopHatXray);
 	 imshow("Blackhat Xray", BlackHatCXray);
+     imwrite("resultados/xray/BlackHatCXray.png", BlackHatCXray);
 	 imshow("Imagen_Top_Black", Imagen_Top_BlackXray);
+     imwrite("resultados/xray/Top_BlackXray.png", Imagen_Top_BlackXray);
      waitKey(0);
      destroyAllWindows();
 
